@@ -34,7 +34,7 @@
         border-radius: 15px;
         box-shadow: 10px 10px 10px 10px rgba(5, 0, 26, 0.219);
         margin: 50px auto;
-        width: 90vw;
+        width: 80vw;
     }
     .cardImg {
         border-radius: 25px;
@@ -84,7 +84,13 @@
         font-weight: 300;
     }
     .avatar {
-        width: 30%;
+        width: 30vh;
+    }
+}
+
+@media (min-width:600px) {
+    .cardBody {
+        width: 40vh;
     }
 }
 
