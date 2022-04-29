@@ -84,7 +84,7 @@
         font-weight: 300;
     }
     .avatar {
-        width: 30vh;
+        width: 20%;
     }
 }
 
@@ -119,8 +119,8 @@
     }
     .figure .imgView {
         position: relative;
-        top: 150px;
-        left: 150px;
+        top: 130px;
+        left: 130px;
     }
     .figure:hover>.capa {
         opacity: 80;
