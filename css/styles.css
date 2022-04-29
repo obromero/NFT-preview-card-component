@@ -1,0 +1,131 @@
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+
+@media (min-width:375px) {
+    body {
+        background-color: var(--main-bg);
+    }
+    .container {
+        width: 85%;
+    }
+    .capa {
+        display: none;
+    }
+    .figure {
+        width: 95%;
+        margin: auto;
+    }
+    .cardBody {
+        background-color: var(--card-bg);
+        border-radius: 15px;
+        box-shadow: 10px 10px 10px 10px rgba(5, 0, 26, 0.219);
+        margin: 50px auto;
+        width: 90vw;
+    }
+    .cardImg {
+        border-radius: 25px;
+        padding: 15px;
+        width: 100%;
+    }
+    h2 {
+        color: var(--white);
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: left;
+        margin-left: 35px;
+    }
+    p {
+        color: var(--soft-blue);
+        text-align: left;
+        margin-left: 35px;
+        padding: 15px 0;
+    }
+    .price {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        margin-left: 35px;
+    }
+    .priceText {
+        color: var(--cyan);
+    }
+    .days {
+        color: var(--soft-blue);
+    }
+    hr {
+        margin-left: 35px;
+        color: var(--line-color);
+    }
+    .creator {
+        display: flex;
+        align-items: center;
+        padding: 25px;
+    }
+    .textOne {
+        color: var(--soft-blue);
+        margin-left: 5px;
+    }
+    .textTwo {
+        color: var(--white);
+        font-weight: 300;
+    }
+    .avatar {
+        width: 30%;
+    }
+}
+
+@media(min-width:1440px) {
+    .cardBody {
+        width: 40vw;
+    }
+    h2:hover {
+        color: var(--cyan);
+        cursor: pointer;
+        transition: all 500ms ease-in-out;
+    }
+    .textTwo:hover {
+        color: var(--cyan);
+        cursor: pointer;
+        transition: all 500ms ease-in-out;
+    }
+    .figure {
+        position: relative;
+    }
+    .figure .capa {
+        display: block;
+        position: absolute;
+        width: 95%;
+        height: 93%;
+        border-radius: 10px;
+        top: 20px;
+        left: 15px;
+        background-color: rgba(0, 225, 255, 0.5);
+        visibility: hidden;
+        transition: all 100ms ease-in-out;
+    }
+    .figure .imgView {
+        position: relative;
+        top: 240px;
+        left: 241px;
+    }
+    .figure:hover>.capa {
+        opacity: 80;
+        visibility: visible;
+        cursor: pointer;
+        transition: all 100ms ease-in-out;
+    }
+}
