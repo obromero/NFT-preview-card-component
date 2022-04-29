@@ -90,7 +90,7 @@
 
 @media (min-width:600px) {
     .cardBody {
-        width: 40vh;
+        width: 60vh;
     }
     h2:hover {
         color: var(--cyan);
