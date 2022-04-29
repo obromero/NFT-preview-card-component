@@ -92,9 +92,6 @@
     .cardBody {
         width: 40vh;
     }
-}
-
-@media(min-width:1440px) {
     h2:hover {
         color: var(--cyan);
         cursor: pointer;
