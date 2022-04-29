@@ -111,10 +111,10 @@
     .figure .capa {
         display: block;
         position: absolute;
-        width: 95%;
-        height: 93%;
+        width: 92%;
+        height: 91%;
         border-radius: 10px;
-        top: 20px;
+        top: 16px;
         left: 15px;
         background-color: rgba(0, 225, 255, 0.5);
         visibility: hidden;
@@ -122,8 +122,8 @@
     }
     .figure .imgView {
         position: relative;
-        top: 240px;
-        left: 241px;
+        top: 150px;
+        left: 150px;
     }
     .figure:hover>.capa {
         opacity: 80;
